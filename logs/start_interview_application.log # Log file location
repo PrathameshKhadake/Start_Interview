@@ -1,0 +1,27 @@
+2025-04-19T19:16:13.203+05:30 ERROR 20564 --- [start_interview] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.org.springframework.web' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.org.springframework.web
+    Value: "DEBUG # Enable debug logging for web requests"
+    Origin: class path resource [application.properties] - 32:39
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG # Enable debug logging for web requests)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
